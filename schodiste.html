@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sauny na míru | ELBL</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">ELBL</div>
+  <nav>
+    <a href="index.html">Domů</a>
+    <a href="index.html#sluzby">Služby</a>
+    <a href="index.html#kontakt">Kontakt</a>
+  </nav>
+  <a href="index.html#kontakt" class="nav-btn">Poptávka</a>
+</header>
+
+<section class="service-page">
+
+  <div class="service-gallery">
+    <button class="gallery-arrow left" onclick="prevImage()">‹</button>
+
+    <img id="mainImage" src="images/sauna1.jpg" alt="Sauna na míru" onclick="openLightbox()">
+
+    <button class="gallery-arrow right" onclick="nextImage()">›</button>
+
+    <div class="thumbnails">
+      <img src="images/sauna1.jpg" onclick="changeImage(0)" class="active">
+      <img src="images/sauna2.jpg" onclick="changeImage(1)">
+      <img src="images/sauna3.jpg" onclick="changeImage(2)">
+      <img src="images/sauna4.jpg" onclick="changeImage(3)">
+    </div>
+  </div>
+
+  <div class="service-info">
+    <p class="label">Sauny na míru</p>
+    <h1>Domácí i venkovní sauny podle vašich představ</h1>
+
+    <p>
+      Vyrábíme sauny na míru pro interiéry i exteriéry. Každý projekt přizpůsobíme
+      prostoru, stylu a požadavkům zákazníka — od návrhu až po finální montáž.
+    </p>
+
+    <div class="benefits">
+      <div>✓ výroba na míru</div>
+      <div>✓ kvalitní dřevěné materiály</div>
+      <div>✓ domácí i venkovní sauny</div>
+      <div>✓ atypické rozměry</div>
+      <div>✓ montáž a dokončení</div>
+    </div>
+
+    <a href="index.html#kontakt" class="btn primary">Nezávazná poptávka</a>
+  </div>
+
+</section>
+
+<section class="process-section">
+  <p class="label center">Jak to probíhá</p>
+  <h2>Od návrhu až po hotovou saunu</h2>
+
+  <div class="process-cards">
+    <div class="process-card">
+      <span>01</span>
+      <h3>Konzultace</h3>
+      <p>Domluvíme prostor, rozměry, styl a představu zákazníka.</p>
+    </div>
+
+    <div class="process-card">
+      <span>02</span>
+      <h3>Návrh</h3>
+      <p>Připraví se řešení sauny přesně podle prostoru a požadavků.</p>
+    </div>
+
+    <div class="process-card">
+      <span>03</span>
+      <h3>Výroba</h3>
+      <p>Sauna se vyrobí z kvalitního dřeva a připraví k montáži.</p>
+    </div>
+
+    <div class="process-card">
+      <span>04</span>
+      <h3>Montáž</h3>
+      <p>Hotová sauna se namontuje a připraví k používání.</p>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <h2>Chcete vlastní saunu na míru?</h2>
+  <p>Pošlete nezávaznou poptávku a domluvte si konzultaci.</p>
+  <a href="index.html#kontakt" class="btn primary">Nezávazná poptávka</a>
+</section>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" onclick="closeLightbox()">×</button>
+  <button class="lightbox-arrow left" onclick="prevImage()">‹</button>
+  <img id="lightboxImage" src="images/sauna1.jpg" alt="Sauna na míru">
+  <button class="lightbox-arrow right" onclick="nextImage()">›</button>
+</div>
+
+
+
+<script>
+  window.serviceImages = [
+    "images/kuchyne1.jpg",
+    "images/kuchyne2.jpg",
+    "images/kuchyne3.jpg",
+    "images/kuchyne4.jpg"
+  ];
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>

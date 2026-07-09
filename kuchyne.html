@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kuchyně na míru | ELBL</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">ELBL</div>
+  <nav>
+    <a href="index.html">Domů</a>
+    <a href="index.html#sluzby">Služby</a>
+    <a href="index.html#kontakt">Kontakt</a>
+  </nav>
+  <a href="index.html#kontakt" class="nav-btn">Poptávka</a>
+</header>
+
+<section class="service-page">
+
+  <div class="service-gallery">
+    <button class="gallery-arrow left" onclick="prevImage()">‹</button>
+
+    <img id="mainImage" src="images/kuchyne1.jpg" alt="Kuchyně na míru" onclick="openLightbox()">
+
+    <button class="gallery-arrow right" onclick="nextImage()">›</button>
+
+    <div class="thumbnails">
+      <img src="images/kuchyne1.jpg" onclick="changeImage(0)" class="active">
+      <img src="images/kuchyne2.jpg" onclick="changeImage(1)">
+      <img src="images/kuchyne3.jpg" onclick="changeImage(2)">
+      <img src="images/kuchyne4.jpg" onclick="changeImage(3)">
+    </div>
+  </div>
+
+  <div class="service-info">
+    <p class="label">Kuchyně na míru</p>
+    <h1>Kuchyně navržená přesně pro váš domov</h1>
+
+    <p>
+      Vyrábíme moderní i klasické kuchyně na míru. Každý návrh přizpůsobíme
+      prostoru, stylu interiéru a praktickým potřebám zákazníka.
+    </p>
+
+    <div class="benefits">
+      <div>✓ návrh podle konkrétního prostoru</div>
+      <div>✓ moderní i klasické provedení</div>
+      <div>✓ kvalitní materiály a kování</div>
+      <div>✓ praktické úložné řešení</div>
+      <div>✓ výroba a montáž na míru</div>
+    </div>
+
+    <a href="index.html#kontakt" class="btn primary">Nezávazná poptávka</a>
+  </div>
+
+</section>
+
+<section class="process-section">
+  <p class="label center">Jak to probíhá</p>
+  <h2>Od návrhu až po hotovou kuchyni</h2>
+
+  <div class="process-cards">
+    <div class="process-card">
+      <span>01</span>
+      <h3>Konzultace</h3>
+      <p>Domluvíme představu, rozměry, styl kuchyně a požadavky na úložný prostor.</p>
+    </div>
+
+    <div class="process-card">
+      <span>02</span>
+      <h3>Návrh</h3>
+      <p>Připraví se řešení kuchyně podle dispozice místnosti a potřeb zákazníka.</p>
+    </div>
+
+    <div class="process-card">
+      <span>03</span>
+      <h3>Výroba</h3>
+      <p>Kuchyně se vyrobí z vybraných materiálů s důrazem na detail a životnost.</p>
+    </div>
+
+    <div class="process-card">
+      <span>04</span>
+      <h3>Montáž</h3>
+      <p>Hotová kuchyně se namontuje a připraví k běžnému používání.</p>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta kitchen-cta">
+  <h2>Chcete kuchyni na míru?</h2>
+  <p>Pošlete nezávaznou poptávku a domluvte si návrh řešení.</p>
+  <a href="index.html#kontakt" class="btn primary">Nezávazná poptávka</a>
+</section>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" onclick="closeLightbox()">×</button>
+  <button class="lightbox-arrow left" onclick="prevImage()">‹</button>
+  <img id="lightboxImage" src="images/kuchyne1.jpg" alt="Kuchyně na míru">
+  <button class="lightbox-arrow right" onclick="nextImage()">›</button>
+</div>
+
+<script>
+  window.serviceImages = [
+    "images/kuchyne1.jpg",
+    "images/kuchyne2.jpg",
+    "images/kuchyne3.jpg",
+    "images/kuchyne4.jpg"
+  ];
+</script>
+
+<script src="script.js"></script>
+<script src="gallery.js"></script>
+</body>
+</html>
