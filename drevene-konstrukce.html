@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sauny na míru | ELBL</title>
+  <title>Dřevěné konstrukce | ELBL</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -23,33 +23,33 @@
   <div class="service-gallery">
     <button class="gallery-arrow left" onclick="prevImage()">‹</button>
 
-    <img id="mainImage" src="images/sauna1.jpg" alt="Sauna na míru" onclick="openLightbox()">
+    <img id="mainImage" src="images/drevena-konstrukce1.jpg" alt="Dřevěné konstrukce" onclick="openLightbox()">
 
     <button class="gallery-arrow right" onclick="nextImage()">›</button>
 
     <div class="thumbnails">
-      <img src="images/sauna1.jpg" onclick="changeImage(0)" class="active">
-      <img src="images/sauna2.jpg" onclick="changeImage(1)">
-      <img src="images/sauna3.jpg" onclick="changeImage(2)">
-      <img src="images/sauna4.jpg" onclick="changeImage(3)">
+      <img src="images/drevena-konstrukce1.jpg" onclick="changeImage(0)" class="active">
+      <img src="images/drevena-konstrukce2.jpg" onclick="changeImage(1)">
+      <img src="images/drevena-konstrukce3.jpg" onclick="changeImage(2)">
+      <img src="images/drevena-konstrukce4.jpg" onclick="changeImage(3)">
     </div>
   </div>
 
   <div class="service-info">
-    <p class="label">Sauny na míru</p>
-    <h1>Domácí i venkovní sauny podle vašich představ</h1>
+    <p class="label">Dřevěné konstrukce</p>
+    <h1>Venkovní dřevěné konstrukce na míru</h1>
 
     <p>
-      Vyrábíme sauny na míru pro interiéry i exteriéry. Každý projekt přizpůsobíme
-      prostoru, stylu a požadavkům zákazníka — od návrhu až po finální montáž.
+      Navrhujeme a vyrábíme pergoly, přístřešky, terasy a další dřevěné
+      konstrukce přesně podle prostoru a přání zákazníka.
     </p>
 
     <div class="benefits">
+      <div>✓ pergoly a altány</div>
+      <div>✓ přístřešky pro auta</div>
+      <div>✓ dřevěné terasy</div>
       <div>✓ výroba na míru</div>
-      <div>✓ kvalitní dřevěné materiály</div>
-      <div>✓ domácí i venkovní sauny</div>
-      <div>✓ atypické rozměry</div>
-      <div>✓ montáž a dokončení</div>
+      <div>✓ odborná montáž</div>
     </div>
 
     <a href="index.html#kontakt" class="btn primary">Nezávazná poptávka</a>
@@ -59,60 +59,61 @@
 
 <section class="process-section">
   <p class="label center">Jak to probíhá</p>
-  <h2>Od návrhu až po hotovou saunu</h2>
+  <h2>Od návrhu až po hotovou konstrukci</h2>
 
   <div class="process-cards">
+
     <div class="process-card">
       <span>01</span>
       <h3>Konzultace</h3>
-      <p>Domluvíme prostor, rozměry, styl a představu zákazníka.</p>
+      <p>Společně vybereme vhodné řešení podle prostoru a požadavků.</p>
     </div>
 
     <div class="process-card">
       <span>02</span>
       <h3>Návrh</h3>
-      <p>Připraví se řešení sauny přesně podle prostoru a požadavků.</p>
+      <p>Připravíme návrh konstrukce včetně materiálů a rozměrů.</p>
     </div>
 
     <div class="process-card">
       <span>03</span>
       <h3>Výroba</h3>
-      <p>Sauna se vyrobí z kvalitního dřeva a připraví k montáži.</p>
+      <p>Konstrukce se vyrobí z kvalitního dřeva s důrazem na dlouhou životnost.</p>
     </div>
 
     <div class="process-card">
       <span>04</span>
       <h3>Montáž</h3>
-      <p>Hotová sauna se namontuje a připraví k používání.</p>
+      <p>Hotová konstrukce se odborně smontuje přímo na místě.</p>
     </div>
+
   </div>
 </section>
 
 <section class="final-cta">
-  <h2>Chcete vlastní saunu na míru?</h2>
-  <p>Pošlete nezávaznou poptávku a domluvte si konzultaci.</p>
+  <h2>Chcete dřevěnou konstrukci na míru?</h2>
+  <p>Ozvěte se nám a připravíme nezávaznou nabídku.</p>
   <a href="index.html#kontakt" class="btn primary">Nezávazná poptávka</a>
 </section>
 
 <div class="lightbox" id="lightbox">
   <button class="lightbox-close" onclick="closeLightbox()">×</button>
   <button class="lightbox-arrow left" onclick="prevImage()">‹</button>
-  <img id="lightboxImage" src="images/sauna1.jpg" alt="Sauna na míru">
+  <img id="lightboxImage" src="images/konstrukce1.jpg" alt="Dřevěné konstrukce">
   <button class="lightbox-arrow right" onclick="nextImage()">›</button>
 </div>
 
-
-
-
 <script>
-  window.serviceImages = [
-    "images/drevene-konstrukce1.jpg",
-    "images/drevene-konstrukce2.jpg",
-    "images/drevene-konstrukce3.jpg",
-
-  ];
+window.serviceImages = [
+    "images/drevena-konstrukce1.jpg",
+    "images/drevena-konstrukce2.jpg",
+    "images/drevena-konstrukce3.jpg",
+    "images/drevena-konstrukce4.jpg"
+];
 </script>
 
 <script src="script.js"></script>
+<script src="gallery.js"></script>
+
 </body>
 </html>
